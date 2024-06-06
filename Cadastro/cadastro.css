@@ -1,0 +1,124 @@
+.cx-decoration__lines {
+    --lines-top-shift: -3.75rem;
+    position: absolute;
+    max-height: 100%;
+    z-index: -1;
+    fill: #79A3D9;
+    opacity: 1
+}
+
+.cx-decoration__lines:dir(rtl) {
+    transform: scaleX(-1)
+}
+
+.cx-decoration__bottom-left-lines,
+.cx-decoration__bottom-right-lines,
+.cx-decoration__top-left-lines,
+.cx-decoration__top-right-lines {
+    display: none
+}
+
+@media(min-width:35.5em) {
+    .cx-decoration__top-left-lines {
+        display: block;
+        max-width: 24.25rem;
+        inset-block-start: 0;
+        inset-inline-start: 0;
+        transform: translateY(var(--lines-top-shift))
+    }
+
+    .cx-decoration__top-left-lines:dir(rtl) {
+        transform: translateY(var(--lines-top-shift)) scaleX(-1)
+    }
+
+    .cx-decoration__bottom-right-lines {
+        display: block;
+        max-width: 50.875rem;
+        inset-block-end: 0;
+        inset-inline-end: 0
+    }
+}
+
+@media(min-width:50em) {
+    .cx-decoration__top-right-lines {
+        display: block;
+        max-width: 28.5625rem;
+        inset-block-start: 0;
+        inset-inline-end: 0;
+        transform: translateY(var(--lines-top-shift))
+    }
+
+    .cx-decoration__top-right-lines:dir(rtl) {
+        transform: translateY(var(--lines-top-shift)) scaleX(-1)
+    }
+
+    .cx-decoration__bottom-left-lines {
+        display: block;
+        max-width: 12.8125rem;
+        inset-block-end: 0;
+        inset-inline-start: 0
+    }
+}
+body{
+    overflow-y: hidden;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.btn-voltar{
+    position: absolute;
+    background-color: #6F7BBF;
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    top:15px;
+    left: 15px;
+    transition: all .5s ease-in-out;
+}
+
+.btn-voltar:hover{
+    background-color: #4e5687!important;
+    scale: 1.15;
+    width: 75px;
+}
+
+.btn-voltar i{
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.btn-voltar a{
+    text-decoration: none;
+}
+
+.box-login {
+    width: 500px;
+    height: 650px;
+    background-color: rgba(111, 123, 191, .7);
+    border-radius: 25px;
+}
+.form-control{
+    margin: 15px auto;
+    width: 70%!important;
+}
+
+.btn-login{
+    background: #6F7BBF!important;
+    scale: 1.2;
+    transition: all .5s ease-in-out!important;
+    margin-bottom: 10px;
+}
+
+.btn-login:hover{
+    background-color: #4e5687!important;
+    color: #fff!important;
+    scale: 1.3;
+}

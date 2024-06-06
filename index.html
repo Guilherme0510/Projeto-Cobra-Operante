@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+
+    <title>Cobra Operante</title>
+</head>
+
+
+
+<!-- #F0F0F2 branco
+#6F7BBF roxo
+#79A3D9 azul
+#0D0C0B preto
+ -->
+
+
+<body>
+    <div class="container">
+        <header
+            class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 fixed-top">
+            <div class="col-md-3 mb-2 mb-md-0">
+                <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+                    <img src="" alt="logo">
+                </a>
+            </div>
+
+            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="#inicio" class="nav-link px-2">Inicio</a></li>
+                <li><a href="#sobre" class="nav-link px-2">Sobre</a></li>
+                <li><a href="#servicos" class="nav-link px-2">Serviços</a></li>
+                <li><a href="#contato" class="nav-link px-2">Contato</a></li>
+            </ul>
+
+            <div class="col-md-3 text-end">
+                <a href="./Login/login.html" class="btn btn-outline-primary me-2">Login</a>
+                <a href="./Cadastro/cadastro.html" class="btn btn-primary">Cadastre-se</a>
+            </div>
+        </header>
+    </div>
+    <!-- Banner -->
+    <section class="banner" id="inicio">
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-md-6 text-banner">
+                    <h1>Soluções Digitais e Serviços Empresariais</h1>
+                    <p>Revolucione sua marca e conquiste o mercado com nossas soluções digitais poderosas. Expandimos os
+                        horizontes da sua empresa com inovação e tecnologia de ponta, garantindo presença marcante e
+                        resultados excepcionais.</p>
+                    <div class="btn-banner">
+                        <a href="#servicos" class="btn btn-banner1">Nossos Serviços</a>
+                        <a href="#" class="btn btn-banner2 ">Contato</a>
+                    </div>
+                </div>
+                <div class="col-md-6" data-tilt
+                    style="will-change: transform; transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);">
+                    <img src="img/img-banner.png" alt="">
+                </div>
+            </div>
+        </div>
+        <svg class="onda-svg" viewBox="0 0 1100 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+            <path fill="#F0F0F2" d="M 0 66 C 174 0 320 50 530 50 C 740 50 880 0 1100 66 V 100 H 0 Z"></path>
+        </svg>
+    </section>
+
+    <section class="py-5" id="sobre" >
+        <div class="linha-branca">
+        </div>
+        <div class="container pb-5 sobre">
+            <div class="dados-sobre">
+                <div class="img-sobre col-md-5">
+                    <img src="img/img-sobre.png" alt="img1" class="img-sobre1" />
+                </div>
+                <div class="text-sobre col-md-7 text-white">
+                    <div class="titulo-caixa text-center">
+                        <h1 class="text-center py-4 mb-2">Sobre Nós</h1>
+                        <div class="text-center p-sobre">
+                            <p>A Cobra Operante é uma empresa fictícia líder no mercado de tecnologia digital. Com uma
+                                história de excelência e inovação, nos estabelecemos como uma referência no setor desde
+                                o nosso início. Nossa jornada começou com a paixão por soluções criativas e seguras para
+                                o mundo online.
+                                <br><br>
+                                Desde então, temos nos dedicado a oferecer serviços de desenvolvimento web, design
+                                gráfico e segurança cibernética que atendem às necessidades em constante evolução dos
+                                nossos clientes. Ao longo dos anos, construímos uma reputação baseada na qualidade do
+                                nosso trabalho e no compromisso com a satisfação dos clientes.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Serviços -->
+    <section class="servicos" id="servicos">
+        <div class="container">
+            <div class="text-center">
+                <h1>Nossos Serviços</h1>
+            </div>
+            <div>
+                <div class="row col-md-12 serv text-center">
+                    <div class="col-md-3 box-serv">
+                        <div class="info-serv">
+                            <i class="fa-regular fa-address-card"></i>
+                            <h4>Cartão Digital</h4>
+                            <p>Leve sua presença digital a todos os lugares com nossos cartões digitais inovadores,
+                                garantindo que sua marca esteja sempre ao alcance de seus clientes, de forma prática e
+                                moderna.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 box-serv">
+                        <div class="info-serv">
+                            <i class="fa-regular fa-star"></i>
+                            <h4>Logo</h4>
+                            <p>Destaque-se no mercado com um logo personalizado que reflete a essência da sua marca,
+                                criando uma identidade visual única e memorável para atrair e fidelizar clientes.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 box-serv">
+                        <div class="info-serv">
+                            <i class="fa-solid fa-globe"></i>
+                            <h4>Desenvolvimento de Site</h4>
+                            <p>Transforme sua visão em uma experiência online excepcional com nossos serviços de
+                                desenvolvimento de sites, criando plataformas intuitivas, funcionais e visualmente
+                                impactantes para engajar seu público e impulsionar seus negócios.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="">
+        <div class="container galeria">
+            <div class="text-center">
+                <small>Serviços recentes</small>
+                <h1>Nosso Portifólio</h1>
+            </div>
+            <div class="row text-center gale col-md-12">
+                <div class="col-md-4 box-galeria ">
+                    <div class="info-galeria">
+                        <div class="galeria-img03"></div>
+                    </div>
+                </div>
+                <div class="col-md-4 box-galeria ">
+                    <div class="info-galeria">
+                        <div class="galeria-img03"></div>
+                    </div>
+                </div>
+                <div class="col-md-4 box-galeria">
+                    <div class="info-galeria">
+                        <div class="galeria-img03"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class=" footer" id="contato">
+        <footer class="py-3 my-4">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Inicio</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Sobre</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Serviços</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Contato</a></li>
+          </ul>
+          <p class="text-center">&copy; 2024 Cobra Operante</p>
+        </footer>
+      </div>
+
+
+
+    <script>
+        VanillaTilt.init(document.querySelectorAll("[data-tilt]"), {
+            max: 25,
+            speed: 200,
+            glare: false,
+        });
+    </script>
+</body>
+
+</html>
